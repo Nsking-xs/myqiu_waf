@@ -28,7 +28,7 @@ function Codepage($strgets,$strgetsq,$strgetsql){
         $sqlfile=$_SERVER['DOCUMENT_ROOT'].'/badlog.txt' ;
         $content='  ip:'.$hackclientip.'  url:'.$url.' post:'.$POSTSTRING.'  get:'.$GETSTRING.'  cookie:'.$COOKIESTRING."\r\n";
         if($sqlfile_url=file_put_contents($sqlfile,$content,FILE_APPEND)){
-        echo '你的操作记录已经被记录!';
+        echo '<br>你的操作记录已经被记录!';
 }
 	exit();	
 }
